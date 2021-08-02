@@ -10,21 +10,15 @@ const keepAlive = require("./server");
 
 client.on('ready', () => {
     console.log(`Online XXXXXXXX!`);
-    client.user.setStatus('dnd');
+    client.user.setStatus('PLAYING');
     setInterval(() => {
         const statuses = [
-            `over servers`,
-            'say ?help for all my commands',
-            'follow @T_dynodiscord on twitter',
-            'for ?',
-            'Dayln#1506',
-            'for bad people',
-            'you',
-            'Xlight',
+            `Made by JanVGX`,
+            '?help',
         ]
 
         const status = statuses[Math.floor(Math.random() * statuses.length)]
-        client.user.setActivity(status, { type: "WATCHING" })
+        client.user.setActivity(status, { type: "PLAYING" })
     }, 5000)
 });
 
