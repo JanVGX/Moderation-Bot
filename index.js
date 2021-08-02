@@ -391,14 +391,7 @@ client.on('message', message => {
                     name: 'clear',
                     value: 'Clear messages',
                },
-               {
-                  name: `thanks!`,
-                  value: `Chris!`,
-                },
-                {
-                  name: 'Shoutout!',
-                  value: `Xilight#3248!`,
-                },
+     
             
             )
         message.author.send(helpembed)
@@ -481,7 +474,7 @@ client.on('message', message => {
             message.channel.send(MuteEmbed)
         } 
     }else if(command == 'Code'){
-      message.author.send('Dayln#1506')
+      message.author.send('JanVGX')
     }
 
 });
